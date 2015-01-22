@@ -60,7 +60,7 @@ int DcdMETAR( char *, Decoded_METAR * );
 /*                                                                  */
 /********************************************************************/
 #pragma page(1)
-main()
+testDecode()
 {
    static char *string[] =
   {

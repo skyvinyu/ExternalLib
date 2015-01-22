@@ -978,7 +978,7 @@ void ebltngen ( ParseBltnFnPtr fnPtr,
 /*  switching directory.                                             */
 /*                                                                   */
 /*********************************************************************/
- 
+
 typedef struct sw_dir_info_rec {
   char wmo_header[11];
   char AFOS_pil[10];
@@ -988,7 +988,7 @@ typedef struct sw_dir_info_rec {
   char flag1;
   char flag2;
   char flag3;
-  char class;
+  char class_name;
   short int domestic_cat_num;
   char afos_tmp;
   char ccb[2];
@@ -1176,8 +1176,9 @@ char *strupr(char *);
 char *strlwr(char *);
 /* char *strdup(char *); */
 /* char *strndup(char *, int); */
-int strcmpi(char *, char *);
- 
+//int strcmpi(char *, char *);
+//int strcmp(char *, char *);
+
 /* void *memccpy(void *, void *, int, unsigned); */
  
 char *rptstrip(char *);

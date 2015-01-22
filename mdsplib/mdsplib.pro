@@ -1,7 +1,11 @@
-TEMPLATE = app
-CONFIG += console
+#TEMPLATE = app
+TARGET = libmdsp
+TEMPLATE = lib
+CONFIG += staticlib
 CONFIG -= app_bundle
 CONFIG -= qt
+
+DESTDIR = ../../lib/
 
 SOURCES += \
     src/stspack3.c \
@@ -15,7 +19,7 @@ SOURCES += \
     src/antoi.c
 
 HEADERS += \
+    include/metar.h \
     src/metar_structs.h \
-    src/local.h \
-    include/metar.h
+    src/local.h
 
